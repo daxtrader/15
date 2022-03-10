@@ -3,6 +3,7 @@ import NativeBalance from "../NativeBalance";
 import Address from "../Address/Address";
 import Blockie from "../Blockie";
 import { Card } from "antd";
+import { Button } from "web3uikit";
 
 const styles = {
   title: {
@@ -23,6 +24,13 @@ const styles = {
     fontSize: "16px",
     fontWeight: "500",
   },
+  generate: {
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    gap: "5px",
+    marginTop: "25px",
+  },
 };
 
 function Wallet() {
@@ -38,6 +46,12 @@ function Wallet() {
       }
     >
       <Transfer />
+      <div style={styles.generate}>
+        Hello
+        <Button theme="primary" type="button">
+          Launch dApp
+        </Button>
+      </div>
     </Card>
   );
 }
