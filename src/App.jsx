@@ -23,7 +23,7 @@ import Text from "antd/lib/typography/Text";
 import Ramper from "components/Ramper";
 import MenuItems from "./components/MenuItems";
 const { Header, Footer } = Layout;
-
+// Seriously
 const styles = {
   content: {
     display: "flex",
